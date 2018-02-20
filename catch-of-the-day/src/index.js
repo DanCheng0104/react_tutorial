@@ -9,6 +9,8 @@ import StorePicker from './components/StorePicker'
 import App from './components/App'
 import NotFound from './components/NotFound'
 
+
+//context is more like global variable
 const Root =() =>{
 	return (
 		<BrowserRouter>
@@ -20,6 +22,11 @@ const Root =() =>{
 		</BrowserRouter>	
 
 	)
+}
+
+// in this way you pass the router to the child storePicker component
+StorePicker.contextTypes = {
+	router: React.PropTypes.object
 }
 
 render(<Root/>,document.querySelector('#main'));
