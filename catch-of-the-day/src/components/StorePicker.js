@@ -16,8 +16,9 @@ class StorePicker extends React.Component {
 		//first grab the text from the box
 		//route change
 		event.preventDefault();
-		console.log(this.storeInput.value);
-		//use ref to reference the input
+		const storeId = this.storeInput.value;
+		this.context.router.transitionTo(`/store/${storeId}`);
+
 	}
 	render(){
 		return (

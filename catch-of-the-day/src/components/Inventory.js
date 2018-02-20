@@ -6,9 +6,10 @@ class Inventory extends React.Component {
 		return (
 			<div>
 				<p>Inventory</p>
-				<AddFishForm></AddFishForm>
+
+				<AddFishForm/>
 			</div>
-			
+
 		)
 	}
 }
